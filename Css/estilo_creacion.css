@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../img/biblioteca.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.formulario_nuevo{
+    display: flex;
+    width: 640px;
+    height: 520px;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    outline: 1px solid white;
+    border-radius: 6%;
+    backdrop-filter: blur(20px);
+}
+.Colum1{
+    position: relative;
+    left: 4%;
+    top: 17.5%;
+}
+
+.Colum1 label{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.Colum1 input{
+    width: 125%;
+    height: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.Colum2{
+    position: relative;
+    left: 17%;
+    top: 17.5%;
+}
+
+.Colum2 label{
+    color: white;
+    margin-right: -100%;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.Colum2 input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.formulario_nuevo input[type="submit"]{
+    position: absolute;
+    width: 90%;
+    top: 75%;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    color: lightskyblue;
+    transition: 0.2s;
+}
+
+.formulario_nuevo input[type="submit"]:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.regresar{
+    text-align: center;
+    position: absolute;
+    width: 260px;
+    top: 10px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 100px;  
+    color: white;
+    transition: 0.2s;
+    left: 80%;
+}
+
+.regresar h4{
+    position: relative;
+    top: 10px;
+}
+
+.regresar:hover{
+    background: black;
+    color: white;
+}
+
+.regresar h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.regresar h4:hover::after{
+        transform: scaleX(0.75);
+}

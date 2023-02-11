@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../img/biblioteca.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Caja_Login{
+    width: 320px;
+    height: 420px;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    outline: 1px solid white;
+    border-radius: 6%;
+    backdrop-filter: blur(20px);
+}
+
+.Caja_Login h1{
+    color: white;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.Caja_Login .Avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+.Caja_Login label{
+    position: relative;
+    top: 200px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.label_mov label{
+    position: relative;
+    color: white;
+    top: -50px;
+    transition: 0.5s;
+}
+
+.label_mov input:focus~label,
+.label_mov input:valid~label{
+    position: relative;
+    transform: translateY(-35px);
+}
+
+
+.Caja_Login input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Caja_Login input[type="text"],
+.Caja_Login input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.Caja_Login input[type="submit"]{
+    position: relative;
+    top: -50px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    color: lightskyblue;
+    transition: 0.2s;
+}
+
+.Caja_Login input[type="submit"]:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.recordar input{
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0;
+    width: 12px;
+    height: 12px;
+}
+
+.recordar label{
+    position: relative;
+    margin: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    top: -20px;
+    font-weight: 100;
+    font-size: 14px;
+    color: white;   
+}
+
+
+.recordar a{
+    position: relative;
+    top: -65px;
+    left: 130px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: whitesmoke   ;
+}
+
+.nueva_cuenta{
+    text-align: center;
+    position: absolute;
+    width: 260px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    font-size: 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 100px;
+    color: lightskyblue;
+    transition: 0.2s;
+    left: 30px;
+}
+
+.nueva_cuenta h4{
+    position: relative;
+    top: 10px;
+}
+
+.nueva_cuenta:hover{
+    background: lightskyblue;
+    color: white;
+}
